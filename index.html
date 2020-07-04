@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <h1>Регулярные выражения</h1>
+  <div>
+    <p>1. Самое глубокое озеро в мире.</p>
+    <p>2. Кто отец Боруто?</p>
+    <p>3. Самая сильная мышца в теле человека.</p>
+    <p>4. Кто написал "Мертвые души"?</p>
+    <p>5. Автор "Игры в бисер"?</p>
+    <p>6. Кого убил Дантес?</p>
+    <p>7. Любимый напиток англичан?</p>
+    <p>8. Столица Бурятии?</p>
+    <p>9. Кто такой Тоби(из аниме Наруто)?</p>
+    <p>10. В какой стране разработали "Ведьмака 3"?</p>
+  </div>
+  <div>
+    <input type="text" placeholder="/.{2}[а-м].[ал]/gi"/><br>
+    <input type="text" placeholder="/[На]{2}.[у-я].+/gi"/><br>
+    <input type="text" placeholder="/[Ю | Я | Як]{1}.[щ-я]./gi"/><br>
+    <input type="text" placeholder="/[а-д].[г].[ль]{2}gi"/><br>
+    <input type="text" placeholder="/[а-ж]{2}[сс]{2}./gi"/><br>
+    <input type="text" placeholder="/[о-ф]{2}.+[н]/gi"/><br>
+    <input type="text" placeholder="/.[а-к]{2}/gi"/><br>
+    <input type="text" placeholder="/[Ул]{2}.+[-].[дэ]{2}/gi"/><br>
+    <input type="text" placeholder="/[О | М | Пе]{1}.+[то]{2}/gi"/><br>
+    <input type="text" placeholder="/[П].[к-н][ь].{2}/gi"/><br>
+  </div>
+  <div>
+    <input type="button" value="Проверить" onclick="getResult()">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
